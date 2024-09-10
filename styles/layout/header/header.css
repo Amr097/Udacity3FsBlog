@@ -1,0 +1,123 @@
+.nav__bg--mobile {
+  display: none;
+  @media screen and (max-width: 56.875em) {
+    display: inline-block;
+    top: 0;
+    position: sticky;
+    width: 100%;
+    height: 9.7675rem;
+    z-index: 888;
+  }
+}
+
+.header__checkbox {
+  position: absolute;
+  z-index: -9999999;
+  top: 0.5rem;
+  right: 5rem;
+  transform: translate(1.5rem, 1.5rem);
+  visibility: hidden;
+  display: none;
+  @media screen and (max-width: 46.875em) {
+    display: inline-block;
+  }
+}
+
+.header__btn {
+  background-color: transparent;
+  border-radius: 8px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4.2rem;
+  width: 4.5rem;
+  top: 2.5rem;
+  right: 2.5rem;
+  z-index: 901;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: var(--box-shadow);
+  display: none;
+  @media screen and (max-width: 56.875em) {
+    display: flex;
+    background-color: white;
+  }
+}
+
+.header__checkbox:checked + .header__btn {
+  border: none;
+  box-shadow: none;
+}
+
+.header__icon {
+  width: 3rem;
+  height: 0.2rem;
+  align-items: center;
+  background-color: black;
+}
+
+.header__icon::after,
+.header__icon::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 3rem;
+  height: 0.2rem;
+  left: 50%;
+  transition: 0.2s ease-in-out;
+  background-color: black;
+}
+
+.header__icon::after {
+  transform: translate(-50%, 0.9rem);
+}
+
+.header__icon::before {
+  transform: translate(-50%, -0.9rem);
+}
+
+.header__checkbox:checked + .header__btn .header__icon {
+  background: transparent;
+}
+
+.header__checkbox:checked + .header__btn .header__icon::before {
+  transform: translate(-50%) rotate(135deg);
+}
+
+.header__checkbox:checked + .header__btn .header__icon::after {
+  transform: translate(-50%) rotate(-135deg);
+}
+
+.filter {
+  visibility: hidden;
+  position: fixed;
+  background-color: black;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  z-index: -1;
+  cursor: pointer;
+}
+
+.header__checkbox:checked ~ .filter {
+  width: 100%;
+  height: 100vh;
+  visibility: visible;
+  opacity: 0.4;
+  top: 0;
+  z-index: 399;
+}
+
+.logo {
+  position: absolute;
+  top: 2rem;
+  left: 5rem;
+
+  z-index: 889;
+  cursor: pointer;
+
+  @media screen and (max-width: 56.875em) {
+    top: 3rem;
+    left: 2rem;
+  }
+}

@@ -1,0 +1,53 @@
+.subscribe {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.form {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.form__inputbox {
+  padding: 1rem;
+  background-color: #f7fafc;
+  border-radius: 7px;
+  border: solid 1px #e2e8f0;
+  gap: 1rem;
+  display: flex;
+}
+
+.form__inputbox svg {
+  width: 2.2rem;
+  height: 2.2rem;
+  fill: transparent;
+  stroke: gray;
+}
+
+.form__input {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  width: 100%;
+}
+
+.form__input::placeholder {
+  color: #4a5568;
+}
+
+.form__btn {
+  background-color: #000;
+  color: white;
+  cursor: pointer;
+  border-radius: 7px;
+  padding: 1rem;
+  height: fit-content;
+}

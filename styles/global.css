@@ -1,0 +1,142 @@
+@import url("base/typography.css");
+@import url("base/variables.css");
+@import url("base/utils.css");
+
+@import url("layout/header/header.css");
+@import url("layout/header/ham-menu.css");
+@import url("layout/footer.css");
+
+@import url("pages/home.css");
+@import url("pages/post.css");
+
+@import url("components/home/blog_card.css");
+@import url("components/home/blog_card_full.css");
+@import url("components/home/blog_card_mini.css");
+@import url("components/home/subscribe.css");
+@import url("components/blog/card.css");
+@import url("components/categories.css");
+@import url("components/btns.css");
+@import url("components/socials.css");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 65.5%;
+  scroll-behavior: smooth;
+  font-family: "Trebuchet MS", serif, Helvetica, sans-serif;
+
+  @media screen and (max-width: 250em) {
+    font-size: 130%;
+  }
+
+  @media screen and (max-width: 187.5em) {
+    font-size: 120%;
+  }
+
+  @media screen and (max-width: 168.75em) {
+    font-size: 110%;
+  }
+
+  @media screen and (max-width: 154.8125em) {
+    font-size: 100%;
+  }
+
+  @media screen and (max-width: 141.25em) {
+    font-size: 90%;
+  }
+
+  @media screen and (max-width: 141.25em) {
+    font-size: 90%;
+  }
+
+  @media screen and (max-width: 125.25em) {
+    font-size: 80%;
+  }
+
+  @media screen and (max-width: 113.75em) {
+    font-size: 70%;
+  }
+
+  @media screen and (max-width: 100em) {
+    font-size: 62.5%;
+  }
+
+  @media screen and (max-width: 90.625em) {
+    font-size: 56.5%;
+  }
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  width: 100%;
+
+  container-type: inline-size;
+  container-name: main;
+
+  @container main (max-width: 850px) {
+    .home {
+      padding: 2rem 0;
+      width: 90%;
+    }
+
+    .full-post {
+      padding: 2rem 0;
+      width: 90%;
+    }
+
+    .title-lg {
+      font-size: 3rem;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: color 0.25s;
+}
+
+a:hover {
+  color: var(--gray);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+img,
+video,
+canvas,
+svg {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: inherit;
+}

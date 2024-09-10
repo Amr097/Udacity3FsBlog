@@ -1,0 +1,19 @@
+.read__btn {
+  color: var(--dark-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  transition: all 0.25s ease-in-out;
+
+  .icon-arrow-2 {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    width: 1.6rem;
+    height: 1.6rem;
+    fill: var(--dark-primary);
+  }
+}
+
+.read__btn:hover {
+  gap: 0.7rem;
+}

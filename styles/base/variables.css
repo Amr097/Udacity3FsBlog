@@ -1,0 +1,17 @@
+:root {
+  --light-primary: #ffffff;
+  --light-secondary: #f5f7fa;
+  --light-secondary-low: #f5f7fa27;
+
+  --dark-primary: #1a202c;
+  --dark-primary-low: #1a202c1e;
+  --dark-secondary: #2d3748;
+  --green: #38a169;
+  --purple: #805ad5;
+  --gray: #322e2e;
+  --gray-light: #675f5f;
+  --gray-lighter: #999797;
+
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --box-shadow-hover: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Blog</title>
+    <link rel="stylesheet" href="styles/global.css" />
+  </head>
+  <body>
+    <!-- Header Start -->
+    <header>
+      <!-- Mobile Navigation Background -->
+      <div class="nav__bg--mobile"></div>
+
+      <!-- Navigation Toggle Checkbox -->
+      <input
+        type="checkbox"
+        class="header__checkbox"
+        id="nav-toggle"
+        onchange="playAudio()"
+      />
+
+      <!-- Navigation Toggle Button -->
+      <label for="nav-toggle" class="header__btn">
+        <span class="header__icon">&nbsp;</span>
+      </label>
+
+      <!-- Overlay Filter -->
+      <div class="filter" onclick="unCheckMenu()"></div>
+
+      <!-- Logo -->
+      <a href="/index.html" class="typo-logo logo">Blog</a>
+
+      <!-- Navigation Menu -->
+      <nav class="nav">
+        <ul class="nav__list" role="list">
+          <li class="nav__item">
+            <a href="" class="text-link nav__link" onclick="unCheckMenu()">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-search"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Header End -->
+
+    <!-- Main Content Start -->
+    <main>
+      <!-- Home Section -->
+      <div class="home">
+        <section class="posts">
+          <!-- Blog Cards Container -->
+          <div class="blog__cards">
+            <!-- Full-width Blog Card -->
+            <figure class="blog__full">
+              <img
+                src="assets/images/post-1.webp"
+                alt="Image 1"
+                class="blog__image"
+              />
+              <div class="blog__card--info">
+                <!-- Category List -->
+                <ol class="category__list">
+                  <li class="category__item">
+                    <span class="category__link text-small-600 text-purple">
+                      Experiences
+                    </span>
+                  </li>
+                  <li class="category__item">
+                    <div class="category__item">
+                      <svg
+                        class="icon-arrow"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                      >
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                      </svg>
+                      <span class="category__link text-small-600"
+                        >John Doe</span
+                      >
+                    </div>
+                  </li>
+                  <li class="category__item">
+                    <div class="category__item">
+                      <svg
+                        class="icon-arrow"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                      >
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                      </svg>
+                      <span class="category__link text-small-600"
+                        >5 minutes</span
+                      >
+                    </div>
+                  </li>
+                  <li class="category__item">
+                    <div class="category__item">
+                      <svg
+                        class="icon-arrow"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                      >
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                      </svg>
+                      <span class="category__link text-small-600"
+                        >2 days ago</span
+                      >
+                    </div>
+                  </li>
+                </ol>
+                <!-- Category List End -->
+
+                <!-- Blog Title -->
+                <figcaption class="title">
+                  The Great Adventure of the Amazon
+                </figcaption>
+
+                <!-- Blog Description -->
+                <p class="text-description text-gray">
+                  The Amazon Rainforest, often referred to as the "lungs of the
+                  Earth," is a vast and mesmerizing expanse that captivates the
+                  hearts of adventurers, nature enthusiasts, and explorers
+                  alike.
+                </p>
+
+                <!-- Read More Button -->
+                <a href="static/blog.html" class="read__btn text-link"
+                  >Read more
+                  <svg
+                    class="icon-arrow-2"
+                    width="100"
+                    height="50"
+                    viewBox="0 0 100 50"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <line
+                      x1="10"
+                      y1="25"
+                      x2="70"
+                      y2="25"
+                      stroke="black"
+                      stroke-width="4"
+                    />
+                    <polygon points="70,15 90,25 70,35" fill="black" />
+                  </svg>
+                </a>
+              </div>
+            </figure>
+
+            <!-- Mini Blog Card 1 -->
+            <figure class="blog__mini--1">
+              <img
+                src="assets/images/post-2.webp"
+                alt="Image 2"
+                class="blog__image"
+              />
+              <div class="blog__card--info">
+                <!-- Category List -->
+                <ol class="category__list">
+                  <li class="category__item">
+                    <span class="category__link text-small-600 text-green">
+                      Nature
+                    </span>
+                  </li>
+                  <li class="category__item">
+                    <div class="category__item">
+                      <svg
+                        class="icon-arrow"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                      >
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                      </svg>
+                      <span class="category__link text-small-600">Gon Doe</span>
+                    </div>
+                  </li>
+                  <li class="category__item">
+                    <div class="category__item">
+                      <svg
+                        class="icon-arrow"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                      >
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                      </svg>
+                      <span class="category__link text-small-600"
+                        >4 minutes</span
+                      >
+                    </div>
+                  </li>
+                  <li class="category__item">
+                    <div class="category__item">
+                      <svg
+                        class="icon-arrow"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                      >
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                      </svg>
+                      <span class="category__link text-small-600"
+                        >5 days ago</span
+                      >
+                    </div>
+                  </li>
+                </ol>
+                <!-- Category List End -->
+
+                <!-- Blog Title -->
+                <figcaption class="title">
+                  The Healing Power of Nature: How Green Spaces Restore the Mind
+                </figcaption>
+
+                <!-- Blog Description -->
+                <p class="text-description text-gray">
+                  Discover the profound benefits of spending time in nature and
+                  how green spaces can rejuvenate your mental health. From
+                  forests to parks, learn why stepping outside is essential for
+                  well-being and how even brief encounters with nature can
+                  reduce stress and boost happines
+                </p>
+
+                <!-- Read More Button -->
+                <a href="static/blog.html" class="read__btn text-link">
+                  Read more
+                  <svg
+                    class="icon-arrow-2"
+                    width="100"
+                    height="50"
+                    viewBox="0 0 100 50"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <line
+                      x1="10"
+                      y1="25"
+                      x2="70"
+                      y2="25"
+                      stroke="black"
+                      stroke-width="4"
+                    />
+                    <polygon points="70,15 90,25 70,35" fill="black" />
+                  </svg>
+                </a>
+              </div>
+            </figure>
+
+            <!-- Mini Blog Card 2 -->
+            <figure class="blog__mini--2">
+              <img
+                src="assets/images/post-3.webp"
+                alt="Image 3"
+                class="blog__image"
+              />
+              <div class="blog__card--info">
+                <!-- Category List -->
+                <ol class="category__list">
+                  <li class="category__item">
+                    <span class="category__link text-small-600 text-purple">
+                      Experiences
+                    </span>
+                  </li>
+                  <li class="category__item">
+                    <div class="category__item">
+                      <svg
+                        class="icon-arrow"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                      >
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                      </svg>
+                      <span class="category__link text-small-600"
+                        >Jane Doe</span
+                      >
+                    </div>
+                  </li>
+                  <li class="category__item">
+                    <div class="category__item">
+                      <svg
+                        class="icon-arrow"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                      >
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                      </svg>
+                      <span class="category__link text-small-600"
+                        >8 minutes</span
+                      >
+                    </div>
+                  </li>
+                  <li class="category__item">
+                    <div class="category__item">
+                      <svg
+                        class="icon-arrow"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                      >
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                      </svg>
+                      <span class="category__link text-small-600"
+                        >9 days ago</span
+                      >
+                    </div>
+                  </li>
+                </ol>
+                <!-- Category List End -->
+
+                <!-- Blog Title -->
+                <figcaption class="title">
+                  Nature's Hidden Wonders: Exploring the Earth's Most
+                  Fascinating Ecosystems
+                </figcaption>
+
+                <!-- Blog Description -->
+                <p class="text-description text-gray">
+                  Dive deep into the world’s most diverse ecosystems, from
+                  rainforests teeming with life to the depths of the ocean.
+                  Explore how these environments sustain life on Earth, their
+                  fragile balance, and the incredible species that call them
+                  home.
+                </p>
+
+                <!-- Read More Button -->
+                <a href="static/blog.html" class="read__btn text-link">
+                  Read more
+                  <svg
+                    class="icon-arrow-2"
+                    width="100"
+                    height="50"
+                    viewBox="0 0 100 50"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <line
+                      x1="10"
+                      y1="25"
+                      x2="70"
+                      y2="25"
+                      stroke="black"
+                      stroke-width="4"
+                    />
+                    <polygon points="70,15 90,25 70,35" fill="black" />
+                  </svg>
+                </a>
+              </div>
+            </figure>
+          </div>
+        </section>
+        <!--Subscribe Form-->
+        <section class="subscribe">
+          <h1 class="title-lg">
+            Subsribe now to our blog <br />
+            to stay updated
+          </h1>
+          <form action="POST" class="form">
+            <div class="form__inputbox">
+              <!-- Mail icon (instead of react-icons, use SVG or a font icon library) -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="icon"
+                width="24"
+                height="24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21.75 7.5v9.75A2.25 2.25 0 0119.5 19.5H4.5a2.25 2.25 0 01-2.25-2.25V7.5m19.5 0v-.75a2.25 2.25 0 00-2.25-2.25H4.5a2.25 2.25 0 00-2.25 2.25v.75m19.5 0l-9.75 6.375L2.25 7.5"
+                />
+              </svg>
+
+              <!-- Input field -->
+              <input
+                type="email"
+                id="newsEmail"
+                placeholder="Enter your email"
+                class="form__input text-link"
+                required
+              />
+            </div>
+
+            <!-- Submit button -->
+            <button type="submit" class="form__btn text-link">Subscribe</button>
+          </form>
+        </section>
+      </div>
+    </main>
+    <!-- Main Content End -->
+
+    <!-- Footer Start -->
+    <footer>
+      <p class="text-small">© 2024 Blog. All rights reserved.</p>
+    </footer>
+    <!-- Footer End -->
+
+    <audio id="audioPlayer">
+      <source src="assets/audio/audio.mp3" type="audio/mp3" />
+
+      Your browser does not support the audio tag.
+    </audio>
+    <!-- JavaScript -->
+    <script src="assets/scripts/script.js"></script>
+  </body>
+</html>

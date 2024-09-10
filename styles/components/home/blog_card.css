@@ -1,0 +1,20 @@
+.blog__card--info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.blog__image {
+  width: 100%;
+  border-radius: 0.75rem;
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+  height: 28rem;
+  object-fit: cover;
+}
+
+.blog__image:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--box-shadow-hover);
+}

@@ -1,0 +1,53 @@
+.category__list {
+  display: flex;
+  align-items: center;
+  color: var(--gray-lighter);
+}
+
+.category__list.category__user {
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
+  align-items: center;
+
+  .bio {
+    grid-column: 2 / span 3;
+  }
+}
+
+.category__item {
+  display: flex;
+  align-items: center;
+}
+
+.category__item.category__image {
+  grid-row: 1 / span 2;
+
+  .user-image {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 1px solid var(--gray-lighter);
+    padding: 0.22rem 0.15rem 0 0.15rem;
+    margin-right: 1rem;
+  }
+}
+
+.category__item + .category__item {
+  margin-left: 0.25rem;
+}
+.category__link {
+  display: flex;
+  align-items: center;
+}
+.icon-home {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+}
+.icon-arrow {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  width: 0.8rem;
+  height: 1rem;
+  fill: var(--gray);
+}

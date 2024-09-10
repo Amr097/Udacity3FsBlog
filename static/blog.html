@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Blog</title>
+    <link rel="stylesheet" href="../styles/global.css" />
+  </head>
+  <body>
+    <!-- Header Start -->
+    <!-- Header Start -->
+    <header>
+      <!-- Mobile Navigation Background -->
+      <div class="nav__bg--mobile"></div>
+
+      <!-- Navigation Toggle Checkbox -->
+      <input
+        type="checkbox"
+        class="header__checkbox"
+        id="nav-toggle"
+        onchange="playAudio()"
+      />
+
+      <!-- Navigation Toggle Button -->
+      <label for="nav-toggle" class="header__btn">
+        <span class="header__icon">&nbsp;</span>
+      </label>
+
+      <!-- Overlay Filter -->
+      <div class="filter" onclick="unCheckMenu()"></div>
+
+      <!-- Logo -->
+      <a href="/index.html" class="typo-logo logo">Blog</a>
+
+      <!-- Navigation Menu -->
+      <nav class="nav">
+        <ul class="nav__list" role="list">
+          <li class="nav__item">
+            <a href="" class="text-link nav__link" onclick="unCheckMenu()">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-search"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Header End -->
+
+    <!-- Main Content Start -->
+    <main>
+      <div class="full-post">
+        <!-- Blog Post Start -->
+        <article class="post">
+          <header class="post__header">
+            <!-- Category List -->
+            <div class="category__list category__user mb-10">
+              <div class="category__item category__image">
+                <img
+                  src="../assets/images/user.svg"
+                  alt="user image"
+                  class="user-image"
+                />
+              </div>
+              <div class="category__item">
+                <span class="category__link text-small-600">John Doe</span>
+              </div>
+              <div class="category__item">
+                <div class="category__item">
+                  <svg
+                    class="icon-arrow"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                  >
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                  <span class="category__link text-small-600">Author</span>
+                </div>
+              </div>
+              <div class="category__item">
+                <div class="category__item">
+                  <svg
+                    class="icon-arrow"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                  >
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                  <span class="category__link text-small-600">Udacity</span>
+                </div>
+              </div>
+
+              <p class="bio text-small">Student at Udacity 3Fs Program</p>
+            </div>
+
+            <!-- Category List End -->
+            <h1 class="title-lg">The Great Adventure of the Amazon4</h1>
+            <p class="text-md-600 text-gray-light">
+              The Amazon is the largest river in the world. It is located in
+              South America and flows through Brazil, Peru, Colombia and etc.
+            </p>
+          </header>
+          <!--Blog Image -->
+          <img
+            src="../assets/images/post-1.webp"
+            alt="Aerial view of Amazon river winding through the rainforest"
+            class="post__image"
+          />
+
+          <!--Blog Content-->
+          <section class="post__content">
+            <!--Socials-->
+            <div class="social-icons">
+              <a href="#" class="social-icon">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="social-icon">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="social-icon">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+                  />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+              </a>
+            </div>
+            <!--Socials end-->
+
+            <div class="post__content--container">
+              <!--Post Beef start-->
+              <h2 class="post__section-title-1">Introduction</h2>
+              <p class="post__text text-gray">
+                The Amazon Rainforest, often referred to as the "lungs of the
+                Earth," is a vast and mesmerizing expanse that captivates the
+                hearts of adventurers, nature enthusiasts, and explorers alike.
+                Spanning across nine countries in South America, this
+                magnificent wilderness holds the key to some of the world's most
+                diverse ecosystems and provides a sanctuary for countless
+                species. Join us on a thrilling journey through the Amazon, as
+                we unveil the secrets of this extraordinary wonderland.
+              </p>
+
+              <h2 class="post__section-title-2">Entering the Jungle</h2>
+              <p class="post__text text-gray">
+                Stepping foot into the Amazon is like entering a whole new
+                world. Dense foliage surrounds you, and the symphony of exotic
+                bird calls and the gentle hum of insects fill the air. The
+                Amazon River, coursing through the heart of the rainforest,
+                serves as a gateway to the myriad of adventures that lie ahead.
+                Be prepared to immerse yourself in an experience like no other.
+              </p>
+
+              <h2 class="post__section-title-2">Wildlife Encounters</h2>
+              <p class="post__text text-gray">
+                The Amazon is a treasure trove of biodiversity, housing an
+                astonishing array of wildlife. From vibrant macaws soaring
+                overhead to elusive jaguars prowling through the undergrowth,
+                encounters with these incredible creatures are awe-inspiring.
+                Guided hikes and river safaris offer opportunities to spot
+                capybaras, pink river dolphins, howler monkeys, and countless
+                other species that call the Amazon home.
+              </p>
+
+              <h2 class="post__section-title-2">
+                Exploring Indigenous Cultures
+              </h2>
+              <p class="post__text text-gray">
+                The Amazon is not only a sanctuary for wildlife but also home to
+                numerous indigenous communities, whose rich cultures and
+                traditions have thrived for centuries. Engaging with these
+                communities provides a glimpse into their unique way of life and
+                deep-rooted connection with the rainforest. Learn about their
+                sustainable practices, traditional medicine, and age-old
+                rituals, and gain a profound appreciation for their harmonious
+                coexistence with nature.
+              </p>
+
+              <h2 class="post__section-title-2">
+                Navigating the Mighty Amazon River
+              </h2>
+              <p class="post__text text-gray">
+                Embarking on a river journey along the Amazon is an adventure in
+                itself. Whether it's traversing the winding tributaries or
+                venturing deep into the heart of the rainforest, the river
+                unveils a world of wonders at every turn. Cruises, canoes, and
+                even paddleboarding offer diverse perspectives and opportunities
+                to witness breathtaking sunsets, encounter river otters, and
+                visit remote riverside communities.
+              </p>
+              <!--Post Beef end-->
+            </div>
+          </section>
+        </article>
+
+        <!--Recommended blogs-->
+
+        <section class="recommended">
+          <h2 class="recommended__title">Recommended Posts</h2>
+          <div class="recommended__list">
+            <figure class="recommended__figure--1">
+              <h3 class="recommended__figure--title">Exploring Paris</h3>
+              <p class="recommended__figure--desc">
+                Discover our top picks for must-see landmarks, charming
+                neighborhoods, and hidden gems in Paris.
+              </p>
+            </figure>
+
+            <figure class="recommended__figure--2">
+              <h3 class="recommended__figure--title">Tokyo Uncovered</h3>
+              <p class="recommended__figure--desc">
+                Dive into the dynamic culture of Tokyo, from bustling streets
+                and delicious street food.
+              </p>
+            </figure>
+          </div>
+        </section>
+      </div>
+      <!--Recommended blogs end-->
+    </main>
+    <!-- Main Content End -->
+
+    <!-- Footer Start -->
+    <footer>
+      <p class="text-small">© 2024 Blog. All rights reserved.</p>
+    </footer>
+    <!-- Footer End -->
+
+    <audio id="audioPlayer">
+      <source src="../assets/audio/audio.mp3" type="audio/mp3" />
+
+      Your browser does not support the audio tag.
+    </audio>
+    <!-- JavaScript -->
+    <script src="../assets/scripts/script.js"></script>
+  </body>
+</html>
